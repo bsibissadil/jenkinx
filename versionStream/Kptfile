@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: versionStream
+upstream:
+  type: git
+  git:
+    commit: beb863c94dc8c29ce53b821d3bc63912702b91e1
+    repo: https://github.com/jenkins-x/jxr-versions
+    directory: /
+    ref: master
